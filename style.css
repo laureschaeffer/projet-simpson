@@ -1,0 +1,143 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+/*couleur:
+
+#4C8DCD bleu
+
+#FDD116 jaune
+
+#29539d bleu fonce   */
+
+#wrapper{
+    background-color: #FDD116;
+    padding: 0 20%;
+}
+
+
+/* ===============HEADER======================================================================================== */
+
+h2 {
+    padding: 1% 0;
+    background-color: #4c8dcd;
+    text-align: center;
+}
+
+header img{
+    width: 100%;
+}
+
+
+/* ===============NAV=================== */
+
+#middle{
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    padding: 5% 1%;
+}
+
+nav {
+    background-color: #4c8dcd ;
+    text-align: center;
+    padding: 2% 5%; 
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+li{
+    padding: 2% 0;
+}
+
+  /* ===============MAIN=================== */
+
+h1 {
+    padding: 2% 0;
+    color: #FDD116;
+
+}  
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 1%;
+}
+
+/* Texte en blanc */
+.biographie p, h2, h3, small, a {
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    padding: 2% 1%;
+    white-space: nowrap;
+}
+
+.biographie {
+    background-color: #4c8dcd;
+    padding: 1% 1%;
+
+}
+
+.biographie figure{
+    text-align: center;
+    padding: 1% 2%;
+}
+
+.biographie p {
+    padding: 2% 0;
+    text-align: justify;
+}
+
+aside img {
+    width: 100px;
+    border : 2px solid white
+
+}
+
+  /* ===============FOOTER=================== */
+
+footer{
+    padding: 1% 0;
+    text-align: center;
+    background-color: #29539d;
+}
+
+  /* ================================version mobile============================ */
+
+@media screen and (max-width: 600px) {
+    #wrapper{
+        padding: 0;
+    }
+
+    #middle{
+        flex-direction: column;
+        display: inline-flex;
+        align-items: stretch;
+    }
+
+
+    main{
+        padding: 1% 1% ;
+        flex-direction: column;
+    }
+
+    .resume, .biographie{
+        text-align: justify;
+    }
+
+    .biographie p, .resume{
+        padding: 2% 2%;
+    }
+  }
